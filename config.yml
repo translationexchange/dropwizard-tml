@@ -1,0 +1,26 @@
+logging:
+  level: INFO
+  loggers:
+    com.berk: DEBUG
+
+server:
+  rootPath: '/app'
+  applicationConnectors:
+  - type: http
+    port: 5000
+  adminConnectors:
+  - type: http
+    port: 5001
+  type: default
+  maxThreads: 1024
+#
+## Database settings.
+#database:
+#  # the name of the JDBC driver, mysql in our case
+#  driverClass: com.mysql.jdbc.Driver
+#  # the username
+#  user: wizards
+#  # the password
+#  password: 1
+#  # the JDBC URL; the database is called DWGettingStarted
+#  url: jdbc:mysql://localhost:3306/DWGettingStarted
